@@ -1,17 +1,26 @@
 <!doctype html>
-
 <html lang="en">
-
 <head>
-
+  <title>Thomas Numnum Creative Search Engine</title>
+  <!-- Include jQuery, jQuery UI, and jQuery UI theme via CDN with SRI hash -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha384-Dziy8F2VlJQLMShA6FHWNul/veM9bCkRUaLqr199K94ntO5QUrLJBEbYegdSkkqX" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="./style.css">
-
 </head>
-
 <body>
-
+  <header>
+    <h1 id="engineName">Numsquared's Super Finder</h1>
+  </header>
+  <input type="text" id="query" placeholder="Search...">
+  <div id="buttonContainer">
+    <button id="searchBtn">Search</button>
+    <button id="luckyBtn">I'm Feeling Lucky</button>
+    <button id="timeBtn">Show Time</button>
+    <button id="clearBtn">Clear</button>
+  </div>
+  <div id="searchResults"></div>
+  <div id="time"></div>
   <script type="text/javascript" src="./script.js"></script>
-
 </body>
-
 </html>
